@@ -42,11 +42,4 @@ if(strcmp(inpstruct.nosamp,'full'))
 else
     indexMap = [];
 end
-
-%% Path: /media/preethamam/Utilities-HDD/OneDrive/Team Work/Team SewerPipe/Programs/2020-12
-%% Shuffling
-inpstruct.nosamp = 'full';
-featMat = newXTrain;
-labelArray = vec2ind(newYTrain.')';
-
-[ Feature_matrix, Labels, Target, indexMap ] = shuffleFeatMatLabel( featMat, labelArray, inpstruct);
+end
